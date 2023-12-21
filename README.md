@@ -19,7 +19,7 @@ First download the latest MassBank db from [here](https://github.com/MassBank/Ma
 
 ### Processing the data
 
-To process the data run the `data_processing.py` script to create the train, test and evaluation datasets saved as .txt
+To process the data run the `data_processing.py` script to create the train, test and evaluation datasets saved as .txt, recently added `data_processing_SELFIES.py` which uses SELFIES strings instead of smiles strings.
 
 ### Training
 
@@ -27,6 +27,6 @@ Train the model by running the `training.py` script which requires both the data
 
 Once training is complete it should save the trained models in the `model` directory.
 
-## Scoring and inference
+## Testing
 
-TBA
+Testing the model can be done by running `test.py` which requires the saved model and test data, it also produces `pred.txt` which is a text file containing the predictions for the test data.
